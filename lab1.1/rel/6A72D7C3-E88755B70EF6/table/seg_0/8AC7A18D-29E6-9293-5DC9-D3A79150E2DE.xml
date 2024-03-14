@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8AC7A18D-29E6-9293-5DC9-D3A79150E2DE" name="pracownik">
+<createdBy>amelk</createdBy>
+<createdTime>2024-03-14 17:28:43 UTC</createdTime>
+<ownerDesignName>lab1.1</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="1C5EC2D8-6D71-3385-141E-A465ACE587E5">
+<createdBy>amelk</createdBy>
+<createdTime>2024-03-14 17:32:34 UTC</createdTime>
+<ownerDesignName>lab1.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwisko" id="DAA3A50E-AC89-58C2-DCD6-43960DC8A469">
+<createdBy>amelk</createdBy>
+<createdTime>2024-03-14 17:36:37 UTC</createdTime>
+<ownerDesignName>lab1.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<defaultValue>Anonim</defaultValue>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<defaultOntNull>true</defaultOntNull>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pesel" id="AF28BD31-71A6-6C2D-4FB1-3BDBC1A31107">
+<createdBy>amelk</createdBy>
+<createdTime>2024-03-14 17:37:59 UTC</createdTime>
+<ownerDesignName>lab1.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EAB9343C-18E3-098B-DFC8-35FDEB185145" name="pracownik_PK">
+<createdBy>amelk</createdBy>
+<createdTime>2024-03-14 17:32:34 UTC</createdTime>
+<ownerDesignName>lab1.1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C5EC2D8-6D71-3385-141E-A465ACE587E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6A58742E-5AC1-95F8-3E48-46CAEB901995" name="pracownik__UN">
+<createdBy>amelk</createdBy>
+<createdTime>2024-03-14 17:38:43 UTC</createdTime>
+<ownerDesignName>lab1.1</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF28BD31-71A6-6C2D-4FB1-3BDBC1A31107"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
