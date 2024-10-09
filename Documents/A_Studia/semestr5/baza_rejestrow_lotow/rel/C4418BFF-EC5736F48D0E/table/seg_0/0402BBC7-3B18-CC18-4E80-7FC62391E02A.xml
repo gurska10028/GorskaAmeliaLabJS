@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0402BBC7-3B18-CC18-4E80-7FC62391E02A" name="Lot">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 20:14:54 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="lot_id" id="FB3D3B5B-CECA-34D1-6743-ABE7D6C61481">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 20:17:55 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_wylotu" id="9963528C-CE5C-AA6F-7FEA-19654F1DD500">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 20:17:55 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_przylotu" id="F29A1C63-05A1-FE0A-90C6-8D92A431C39B">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 20:17:55 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="samolot_id" id="160C5B89-D977-D34E-E045-155300C81A92">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 20:17:55 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="trasa_id" id="35D2AC17-8DD9-2B7A-C5A7-9967075C9144">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 20:20:45 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E80F8473-D0FF-4B46-BF67-E910F1510D26" name="Lot_PK">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 20:17:55 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FB3D3B5B-CECA-34D1-6743-ABE7D6C61481"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

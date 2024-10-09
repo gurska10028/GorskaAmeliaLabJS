@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="7E4C8BED-3EFA-0017-FD61-211FF4079E9D" mainViewID="81AE7882-F3A6-7381-0538-38F046D2262A">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 19:35:19 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

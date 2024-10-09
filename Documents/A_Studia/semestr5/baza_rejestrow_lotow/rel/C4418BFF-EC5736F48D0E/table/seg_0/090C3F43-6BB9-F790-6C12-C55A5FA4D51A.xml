@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="090C3F43-6BB9-F790-6C12-C55A5FA4D51A" name="Pasażer">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 19:54:06 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="pasażer_id" id="2E39F8DB-0537-9D76-E5BE-BCB963D51521">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 20:03:35 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="imie" id="C11DD251-1CD5-09A3-D348-C4F7D5F05464">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 20:03:35 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwisko" id="8881E7A7-36BB-D329-13B9-F4DF3059F5E5">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 20:04:21 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<defaultValue>Anonim</defaultValue>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<defaultOntNull>true</defaultOntNull>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="4AED28AE-CE4B-2FD2-4FB0-03C796CEC84E">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 20:06:46 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefon" id="DF0DCC4D-1232-4678-3DD4-3C8CC62192C9">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 20:06:46 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AF463541-C609-7AF8-1501-DDB78B78D38E" name="Pasażer_PK">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 20:03:35 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E39F8DB-0537-9D76-E5BE-BCB963D51521"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="44B44DCB-9065-1AFD-71B0-3CA4F6EFE553" name="Pasażer__UN">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 20:12:10 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4AED28AE-CE4B-2FD2-4FB0-03C796CEC84E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

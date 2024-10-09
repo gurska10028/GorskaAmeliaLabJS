@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ACA61D72-BE4B-C602-DF8E-B93306DAC560" name="Bilet">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 20:50:13 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="bilet_ID" id="F6A58ADD-E079-D2D0-77E0-68B5388FC215">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 20:55:04 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_bilet_bilet_id</notNullConstraintName>
+</Column>
+<Column name="cena" id="A0A6D098-182C-6DFF-C1A8-5DFA495C6A8F">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 20:55:04 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_bilet_cena</notNullConstraintName>
+</Column>
+<Column name="klasa_biletu_id" id="52FAAE5C-5108-47E7-9F58-C4B8F3044C01">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 20:58:28 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F7A67F89-49AF-7164-06CC-8E933A8A684D" name="bilet_PK">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 20:55:04 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F6A58ADD-E079-D2D0-77E0-68B5388FC215"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

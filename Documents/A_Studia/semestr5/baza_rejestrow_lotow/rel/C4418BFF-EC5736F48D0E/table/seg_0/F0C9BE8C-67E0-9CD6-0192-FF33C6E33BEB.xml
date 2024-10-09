@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F0C9BE8C-67E0-9CD6-0192-FF33C6E33BEB" name="Klasa Biletu">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 21:07:03 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="klasa_biletu_id" id="AC3F16E0-6516-A6F4-F6FF-B9125665EAB5">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 21:08:38 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwa" id="20026B17-BA5B-A314-6B05-2737BF1FC2C9">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 21:08:38 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F924388C-ECDF-DE92-9D40-933171049199" name="Klasa Biletu_PK">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 21:08:38 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC3F16E0-6516-A6F4-F6FF-B9125665EAB5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="96DB145D-80CA-E2A5-664B-B289A3A3ED03" name="Klasa Biletu__UN">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 21:08:38 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="20026B17-BA5B-A314-6B05-2737BF1FC2C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

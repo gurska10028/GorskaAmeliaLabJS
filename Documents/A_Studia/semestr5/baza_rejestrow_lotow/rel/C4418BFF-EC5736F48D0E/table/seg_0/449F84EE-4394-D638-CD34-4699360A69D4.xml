@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="449F84EE-4394-D638-CD34-4699360A69D4" name="Rezerwacja">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 20:44:20 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="rezerwacja_id" id="5DB0C87D-F0BD-3C87-32E6-29E46AE24FE5">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 20:48:04 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<listOfValues>
+<valueDef value="anulowana" description=""/>
+<valueDef value="potwierdzona" description=""/>
+<valueDef value="w trakcie" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_rezerwacji" id="53E99E9D-B296-BD1C-FF59-4E1DD85E6C67">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 20:48:04 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="D7F48592-18EB-B4B0-3665-79068CB3FF57">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 20:48:04 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<constraintName>status_check</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pasazer_id" id="101F9897-1C83-EFEA-1CBB-F0178285AB78">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 20:48:04 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bilet_id" id="3A1B7A86-D612-EDCD-3C93-E85AA09ADADD">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 20:48:04 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D2FC2614-926E-4B18-87DF-864B43B8D778" name="rezerwacja_PK">
+<createdBy>amelk</createdBy>
+<createdTime>2024-10-09 20:48:04 UTC</createdTime>
+<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5DB0C87D-F0BD-3C87-32E6-29E46AE24FE5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
