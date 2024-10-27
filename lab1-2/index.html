@@ -24,7 +24,52 @@
 <script src="js/jquery.easing.1.3.min.js"></script>
 <script src="js/jquery.easing.compatibility.js"></script>
 
+<script>
+    let score = 0;
+    let q = 0;
 
+    const questions = [
+        ['2 + 4', '6'],
+        ['Pierwiastek z 4?', '2'],
+        ['98 / 2', '49'],
+        ['Pierwiastek z 49?', '7'],
+    ];
+
+    function checkAnswer() {
+        const answer = document.getElementById("Odpowiedz").value;
+        if (answer === questions[q][1]) {
+            score++;
+        }
+        q++;
+        showNextQuestion();
+    }
+
+    function showNextQuestion() {
+        if (q < questions.length) {
+            document.getElementById("Pytanie").innerText = questions[q][0];
+            document.getElementById("Odpowiedz").value = '';
+        } else {
+            endQuiz();
+        }
+    }
+
+    function endQuiz() {
+        document.getElementById("Pytanie").innerText = `Liczba punktów: ${score} z ${questions.length}.`;
+        document.getElementById("Odpowiedz").style.display = "none";
+        document.getElementById("Next").style.display = "none";
+    }
+
+    function startQuiz() {
+        document.getElementById("start").style.display = "none";
+        document.getElementById("Pytanie").style.display = "";
+        document.getElementById("Odpowiedz").style.display = "";
+        document.getElementById("Next").style.display = "";
+        showNextQuestion();
+    }
+</script>
+
+
+	
 
 </head>
 
@@ -122,22 +167,6 @@
                         <p id="nr-indeksu"></p> 
                 </div>
 				<div class="row">
-                    <div class="col-md-2" align="left">
-                        <p>Jezyk:</p>
-                    </div>
-                    <div class="col-md-4">
-                        <p id="jezyk"></p> 
-                    </div>
-                </div>
-				<div class="row">
-                    <div class="col-md-2" align="left">
-                        <p>Dzien tygodnia:</p>
-                    </div>
-                    <div class="col-md-4">
-                        <p id="dzien-tygodnia"></p> 
-                    </div>
-                </div>
-				<div class="row">
 					<div class="col-md-6" align="center">
 						<button onclick="wyswietlOkno()" class="btn btn-primary">Wyświetl moje dane</button>
 					</div>
@@ -154,156 +183,17 @@
 			<div class="jumbotron">
 				<h1>Projekt 1</h1>
 
-				
-
-				
-			    
-				<script>
-					//zadanie 1
-					document.write('<h3>zadanie 1</h3>');
-					const dane = [1, 20445, 'www.javascript.com', 'Amelia', true];
-					//wyswietla drugi element
-					alert(dane[1]);
-					//zmodyfikuj ostatni element:
-					dane[dane.length-1] = 'Patrycja';
-					alert(dane[4]);
-					//dodajemy jeden element
-					dane[5] = false;
-					//dodajemy element na ostatnie miejsce 
-					dane[dane.length] = 'Gorska';
-					//dodajmey kilka elementow na koncu push()
-					dane.push('nowy1', 'nowy2', 'nowy3');
-					//dodajmey kilka elementow na poczatku unshift()
-					dane.unshift('nowy12', 'poniedzialek');
-					// do usuwania ostatniego elementu pop()
-					dane.pop();
-					//do usuwania pierwszego elementu shift()
-					dane.shift();
-					
-
-					// Zadanie 2
-					document.write('<h3>zadanie 2</h3>');
-					const tablica2 = ['Angielski', 'ANS', true, 2];
-
-					// Wyświetl pierwszy element
-					document.write('<p>Pierwszy element to <strong>' + tablica2[0] + '</strong></p>');
-
-					// Wyświetl ostatni element
-					document.write('<p>Ostatni element to <strong>' + tablica2[tablica2.length - 1] + '</strong></p>');
-
-					// Dodaj nowy element na początek tablicy
-					tablica2.unshift('PPP');
-
-					// Ponownie wyświetl pierwszy element
-					document.write('<p>Nowy pierwszy element to <strong>' + tablica2[0] + '</strong></p>');
-					
-								
-					//zadanie 3
-					document.write('<h3>zadanie 3</h3>');
-					//Liczy elementy na stronie
-					const formsCounter = document.forms.length; //Ilość elementów w kolekcji forms (formularzy)
-					const h1licznik = document.getElementsByTagName('h1').length; 
-					const plicznik = document.getElementsByTagName('p').length; //l akapitow
-					
-					// Wyświetlanie ilości elementów w sekcji projektu
-					document.write('<p>Podsumowanie elementów na stronie</p>');
-					document.write('<p>Liczba formularzy na stronie: <strong>' + formsCounter + '</strong></p>');
-					document.write('<p>Liczba h1 na stronie: <strong>' + h1licznik + '</strong></p>');
-					document.write('<p>Liczba p na stronie: <strong>' + plicznik + '</strong></p>');
-
-					//zadanie4
-					document.write('<p>Połowa elementów z tablicy "dane" za pomocą pętli while</p>');
-
-					let i = 0;
-					while (i < Math.floor(dane.length / 2)) {
-						document.write('<p>' + dane[i] + '</p>');
-						i++;
-					}
-
-					document.write('<p>Połowa elementów z tablicy "dane" za pomocą pętli for</p>');
-
-					for (let j = 0; j < Math.floor(dane.length / 2); j++) {
-						document.write('<p>' + dane[j] + '</p>');
-					}
-
-
-					</script>
-					
-
-
-				
-					
+					<button id="start" class="btn btn-primary" onclick="startQuiz()">Rozpocznij Quiz</button>
+					<p id="Pytanie" style="display: none">Pytanie</p>
+					<input type="text" id="Odpowiedz" style="display: none; width: 320px; padding-bottom: 8px;" class="form-control">
+					<button id="Next" style="display: none; margin-top: 12px;" class="btn btn-primary" onclick="checkAnswer()">Następne pytanie</button>
 
 			</div>
 		</div>
 	</section>
 
 
-	<section id="projekt2">
-		<div class="container">
-			<div class="jumbotron">
-				<h1>Projekt 2</h1>
-				
-				<p>Miejsce na projekt laboratoryjny</p>
-
-				<div id="quiz-container">
-				</div>
 	
-				<button onclick="startQuiz()">Rozpocznij quiz</button>
-
-				<script>
-					const questions = [
-						['Ile księżyców ma Ziemia?', 1],
-						['Ile księżyców ma Saturn?', 62],
-						['Ile księżyców ma Wenus?', 0]
-					];
-
-					let score = 0;          // Wynik użytkownika
-					let currentQuestion = 0; // Aktualne pytanie
-
-					function startQuiz() {
-						score = 0;
-						currentQuestion = 0;
-						showQuestion(); 
-					}
-
-				
-					function showQuestion() {
-						const quizContainer = document.getElementById("quiz-container");
-						quizContainer.innerHTML = ''; 
-
-						if (currentQuestion < questions.length) {
-							const questionText = questions[currentQuestion][0];
-							quizContainer.innerHTML = `
-								<p>${questionText}</p>
-								<input type="number" id="answer">
-								<button onclick="checkAnswer()">Sprawdź odpowiedź</button>
-							`;
-						} else {
-							quizContainer.innerHTML = `<p>Twój wynik to: ${score} z ${questions.length}</p>`;
-						}
-					}
-
-					//sprawdzanie odpwoiedzi
-					function checkAnswer() {
-						const userAnswer = parseInt(document.getElementById("answer").value);
-						const correctAnswer = questions[currentQuestion][1];
-
-						if (userAnswer === correctAnswer) {
-							alert("Prawidłowa odpowiedź!");
-							score++;
-						} else {
-							alert("Błąd. Prawidłowa odpowiedź to " + correctAnswer);
-						}
-
-						currentQuestion++;
-						showQuestion(); 
-					}
-				</script>
-				
-			</div>
-		</div>
-	</section>
 
 	<footer>
 		<div class="container" style="margin-top: 5%">
