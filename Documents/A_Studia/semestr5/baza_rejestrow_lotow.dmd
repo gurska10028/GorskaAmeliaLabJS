@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="baza_rejestrow_lotow" id="F1BBDF68-08AD-7404-5F22-307F9D5BA801" version="3.5">
-<createdBy>amelk</createdBy>
-<createdTime>2024-10-09 19:35:19 UTC</createdTime>
-<ownerDesignName>baza_rejestrow_lotow</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>F1BBDF68-08AD-7404-5F22-307F9D5BA801</designId>
-</OSDM_Design>
