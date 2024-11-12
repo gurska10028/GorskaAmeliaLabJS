@@ -23,21 +23,8 @@
 <script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js"></script>
 <script src="js/jquery.easing.1.3.min.js"></script>
 <script src="js/jquery.easing.compatibility.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-
-<script>
-	$(document).ready(function() {
-	$('span.pq').each(function() {
-	const quote=$(this).clone();
-	quote.removeClass('pq');
-	quote.addClass('pullquote');
-	$(this).before(quote);
-	}); // koniec funkcji each
-	}); // koniec funkcji ready
-	</script>
-	
-
-	
 
 </head>
 
@@ -164,8 +151,139 @@
 		</div>
 	</section>
 
+	<section id="projekt2">
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Projekt 2</h1>
+                <a href="#">Odnośnik 1</a>
+                <a href="#">Odnośnik 2</a>
+                <a href="#">Odnośnik 3</a>
+            </div>
+        </div>
+    </section>
+
+	<section id="projekt3">
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Projekt 3</h1>
+                <form>
+                    <input type="button" id="changeTextButton" value="kliknij mnie" />
+                    <br><br>
+                    <input type="button" class="styleChanger" data-num="1" value="Przycisk 1" />
+                    <input type="button" class="styleChanger" data-num="2" value="Przycisk 2" />
+                    <input type="button" class="styleChanger" data-num="3" value="Przycisk 3" />
+                    <input type="button" class="styleChanger" data-num="4" value="Przycisk 4" />
+                    <input type="button" class="styleChanger" data-num="5" value="Przycisk 5" />
+                    <input type="button" class="styleChanger" data-num="6" value="Przycisk 6" />
+                    <input type="button" class="styleChanger" data-num="7" value="Przycisk 7" />
+                    <input type="button" class="styleChanger" data-num="8" value="Przycisk 8" />
+                    <input type="button" class="styleChanger" data-num="9" value="Przycisk 9" />
+                    <input type="button" class="styleChanger" data-num="10" value="Przycisk 10" />
+                </form>
+            </div>
+        </div>
+    </section>
+
+	<section id="Projekt5">
+		<div class="container">
+			<div class="jumbotron">
+				<h2>Projekt 5</h2>
+				<table class="table table-bordered" name="tak">
+					<thead>
+						<tr>
+							<th>Numer</th>
+							<th>Imię</th>
+							<th>Wiek</th>
+							<th>Cytat</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class='test1'>
+							<td>0</td>
+							<td name="Jan">Amelia</td>
+							<td><input type="number" value="25" style="display: none;" /></td>
+							<td><span class="quote">„Sukces to idący od porażki do porażki bez utraty entuzjazmu.”</span></td>
+						</tr>
+						<tr name="test2">
+							<td>1</td>
+							<td>Agnieszka</td>
+							<td><input type="number" value="30" style="display: none;" /></td>
+							<td><span class="quote">„Czas jest ograniczony, więc nie marnuj go, żyjąc cudzym życiem”</span></td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Kasia</td>
+							<td><input type="number" value="15" style="display: none;" /></td>
+							<td><span class="quote">„Człowiek jest silniejszy, kiedy stawia czoła wyzwaniom. To odwaga napędza nas do działania”</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+
+	<section id="Projekt6">
+		<div class="container">
+			<div class="jumbotron">
+				<h2>Projekt 6</h2><br>
+				<button id="button1" class="btn btn-primary mb-2">Zmień kolor wierszy</button>
+				<br><br>
+				<button id="button2" class="btn btn-primary mb-2">Zmniejsz jasność tekstu</button>
+				<br><br>
+				<button id="button3" class="btn btn-primary mb-2">Wyłącz kolumnę Imię, Wiek oraz Cytat</button>
+				<br><br>
+				<button id="button4" class="btn btn-primary mb-2">Wyłącz wszystkie wiersze poza pierwszym</button>
+				<br><br>
+				<button id="button5" class="btn btn-primary mb-2">Pokaż ukryty wiek</button>
+				<br><br>
+				<button id="button6" class="btn btn-primary mb-2">Zmniejsz przezroczystość o połowę dla wszystkich
+					input, ktore mają value zaczynające się od '3'</button>
+				<br><br>
+				<button id="button7" class="btn btn-primary mb-2">Zmniejsz przezroczytosc do 1/3 dla kazdego wierszu,
+					ktorego name konczy sie na '1'</button>
+				<br><br>
+				<button id="button8" class="btn btn-primary mb-2">Zmienia na czerwono wszystkie elementy, ktore w name=
+					" maja słowo "tak"</button>
+			</div>
+		</div>
+	</section>
+
+	<section id="Projekt7">
+		<div class="container">
+			<div class="jumbotron">
+				<h2>Projekt 7</h2>
+				<button id="filter1" class="btn btn-primary mb-2">Zmień kolor parzystych wierszy</button>
+				<br><br>
+				<button id="filter2" class="btn btn-primary mb-2">Zmniejsz jasność nieparzystych wierszy</button>
+				<br><br>
+				<button id="filter3" class="btn btn-primary mb-2">Wyłącz parzyste wiersze, ktore maja klase
+					test</button>
+				<br><br>
+				<button id="filter4" class="btn btn-primary mb-2">Wyłącz pierwszy wers</button>
+				<br><br>
+				<button id="filter5" class="btn btn-primary mb-2">Wylacz wszystkie wiersze, ktore nie maja klasy
+					test</button>
+				<br><br>
+				<button id="filter6" class="btn btn-primary mb-2">Zmniejsz przezroczystość o połowę dla wszystkich
+					wierszy z elementem "span"</button>
+				<br><br>
+				<button id="filter7" class="btn btn-primary mb-2">Zmniejsz przezroczystosc do 1/3 dla kazdego wiersza
+					zawierajacego 'Jan'</button>
+				<br><br>
+				<button id="filter8" class="btn btn-primary mb-2">Pierwszy i ostatni element</button>
+			</div>
+		</div>
+	</section>
+	
+
 
 	
+	
+
+
+
+	<!-- Kontener na wiadomości informacyjne -->
+	<section class="main"></section>
 
 	<footer>
 		<div class="container" style="margin-top: 5%">
@@ -350,11 +468,191 @@
 	</script>
 
 	
+	<script>
+		$(document).ready(function() {
+			$('span.pq').each(function() {
+				const quote=$(this).clone();
+				quote.removeClass('pq');
+				quote.addClass('pullquote');
+				$(this).before(quote);
+			}); // koniec funkcji each
+		}); // koniec funkcji ready
+	</script>
 	
 
+	<script>
+		$(document).ready(function() {
+			//1 Podwójne kliknięcie na stronie wyświetla alert
+			$(document).dblclick(function() {
+				alert("Podwójne kliknięcie na stronie!");
+			});
+	
+			// 2 Wyświetlenie akapitu po najechaniu na linki 
+			$('#projekt2 a').hover(
+				function() {
+					// Sprawdź, czy komunikat już istnieje
+					if ($(this).next('.hover-message').length === 0) {
+						const message = "<p class='hover-message' style='color: gray; font-style: italic; display: inline;'>Wskazałeś odnośnik myszą!</p>";
+						$(this).after(message);
+					}
+				},
+				function() {
+					// Usuń komunikat po opuszczeniu odnośnika
+					$(this).next('.hover-message').remove();
+				}
+			);
 
+			$('#changeTextButton').click(function() {
+            $(this).val("zostałem kliknięty!");
+        });
+	
+			// 3. Zmiana tekstu przycisku po kliknięciu przycisku
+			$('.styleChanger').click(function() {
+            const buttonNum = $(this).data('num'); 
+            const targetElement = $('#projekt3'); 
+            const styleClass = `style-${buttonNum}`; // Klasa stylu dla tego przycisku
+            const tag = targetElement.prop("tagName"); 
 
+            // Sprawdzenie, czy styl jest już aktywny
+            if (targetElement.hasClass(styleClass)) {
+                // Jeśli styl jest aktywny usuń go i przywróć stan przycisku
+                targetElement.removeClass(styleClass);
+                $(this).val(`Przycisk ${buttonNum}`); // Przywrócenie pierwotnej nazwy przycisku
+                $('.main p').last().remove(); // Usunięcie ostatniego dodanego akapitu
+            } else {
+                // Jeśli styl nie jest aktywny dodaj go i zmień stan przycisku
+                targetElement.addClass(styleClass);
+                $(this).val(`NR ${buttonNum}. kliknięty`); 
 
+                // Dodanie informacji o zmianie do sekcji .main
+                const message = `<p>Przycisk ${buttonNum} zmienił styl elementu &lt;${tag}&gt; na styl "${styleClass}".</p>`;
+				$('.main').append(message);
+
+            }
+        });
+		});
+	</script>
+	
+	<script>
+		$(document).ready(function () {
+			// Optymalizacja funkcji z cache'owaniem selektorów oraz uproszczonym kodem
+			const $rows = $('table tbody tr');
+			const $cells = $('tr > td');
+			const $inputsWith3Value = $('input[value^="3"]');
+			const $nameTak = $('table[name*="tak"]');
+			const $oddRows = $rows.filter(':odd');
+			const $evenRows = $rows.filter(':even');
+			const $rowsWithSpan = $rows.has('td span');
+			const $janRows = $rows.filter(function () {
+				return $(this).find('td:contains("Jan")').length > 0;
+			});
+			const $firstRow = $rows.first();
+			const $rowsNotTest = $rows.not('.test');
+			const $inputHidden = $('table tbody tr input:hidden');
+			const $rowTestEven = $('table tbody tr.test:even');
+	
+			$('#button1').click(function () {
+				$rows.toggleClass('changed').slideToggle(500);
+				$(this).text($rows.hasClass('changed') ? "Resetuj kolor wierszy" : "Zmień kolor wierszy")
+					.toggleClass('btn-danger btn-primary');
+			});
+	
+			$('#button2').click(function () {
+				$cells.toggleClass('changed').fadeTo(1000, $cells.hasClass('changed') ? 0.5 : 1);
+				$(this).text($cells.hasClass('changed') ? "Resetuj jasność tekstu" : "Zmniejsz jasność tekstu")
+					.toggleClass('btn-danger btn-primary');
+			});
+	
+			$('#button3').click(function () {
+				const $quote = $('td + td');
+				$quote.toggleClass('changed').slideToggle(500);
+				$(this).text($quote.hasClass('changed') ? "Resetuj wyłączenie" : "Wyłącz kolumnę Imię, Wiek oraz Cytat")
+					.toggleClass('btn-danger btn-primary');
+			});
+	
+			$('#button4').click(function () {
+				const $ageCell = $('tr ~ tr');
+				$ageCell.toggleClass('changed').fadeToggle(500);
+				$(this).text($ageCell.hasClass('changed') ? "Resetuj wyłączenie" : "Wyłącz wszystkie wiersze poza pierwszym")
+					.toggleClass('btn-danger btn-primary');
+			});
+	
+			$('#button5').click(function () {
+				const $ageInput = $('input[type="number"]');
+				$ageInput.toggleClass('changed').fadeToggle(500);
+				$(this).text($ageInput.hasClass('changed') ? "Resetuj pokazywanie wieku" : "Pokaż ukryty wiek")
+					.toggleClass('btn-danger btn-primary');
+			});
+	
+			$('#button6').click(function () {
+				$inputsWith3Value.toggleClass('changed').fadeTo(500, $inputsWith3Value.hasClass('changed') ? 0.5 : 1);
+				$(this).text($inputsWith3Value.hasClass('changed') ? "Resetuj przezroczystość" : "Zmniejsz przezroczystość o połowę dla wszystkich input, ktore mają value zaczynające się od '3'")
+					.toggleClass('btn-danger btn-primary');
+			});
+	
+			$('#button7').click(function () {
+				const $rowsWithNameEnding1 = $('tr[name$="1"]');
+				$rowsWithNameEnding1.toggleClass('changed').fadeTo(500, $rowsWithNameEnding1.hasClass('changed') ? 0.3 : 1);
+				$(this).text($rowsWithNameEnding1.hasClass('changed') ? "Resetuj przezroczystość" : "Zmniejsz przezroczystość do 1/3 dla kazdego wierszu, ktorego name konczy sie na '1'")
+					.toggleClass('btn-danger btn-primary');
+			});
+	
+			$('#button8').click(function () {
+				$nameTak.toggleClass('changed').css('color', $nameTak.hasClass('changed') ? 'red' : '');
+				$(this).text($nameTak.hasClass('changed') ? "Resetuj kolor elementów" : "Zmienia na czerwono wszystkie elementy, ktore w name= mają slowo 'tak'")
+					.toggleClass('btn-danger btn-primary');
+			});
+	
+			$('#filter1').click(function () {
+				$evenRows.toggleClass('changed').css('background-color', $evenRows.hasClass('changed') ? 'lightblue' : '');
+				$(this).text($evenRows.hasClass('changed') ? "Resetuj kolor wierszy" : "Zmień kolor parzystych wierszy")
+					.toggleClass('btn-danger btn-primary');
+			});
+	
+			$('#filter2').click(function () {
+				$oddRows.toggleClass('changed').fadeTo(1000, $oddRows.hasClass('changed') ? 0.5 : 1);
+				$(this).text($oddRows.hasClass('changed') ? "Resetuj jasność tekstu" : "Zmniejsz jasność nieparzystych wierszy")
+					.toggleClass('btn-danger btn-primary');
+			});
+	
+			$('#filter3').click(function () {
+				$rowTestEven.toggleClass('changed').slideToggle(500);
+				$(this).text($rowTestEven.hasClass('changed') ? "Resetuj wyłączenie" : "Wyłącz parzyste wiersze, ktore maja klase test")
+					.toggleClass('btn-danger btn-primary');
+			});
+	
+			$('#filter4').click(function () {
+				$firstRow.toggleClass('changed').fadeToggle(500);
+				$(this).text($firstRow.hasClass('changed') ? "Resetuj wyłączenie" : "Wyłącz pierwszy wers")
+					.toggleClass('btn-danger btn-primary');
+			});
+	
+			$('#filter5').click(function () {
+				$rowsNotTest.toggleClass('changed').fadeToggle(500);
+				$(this).text($rowsNotTest.hasClass('changed') ? "Resetuj pokazywanie wieku" : "Wylacz wszystkie wiersze, ktore nie maja klasy test")
+					.toggleClass('btn-danger btn-primary');
+			});
+	
+			$('#filter6').click(function () {
+				$rowsWithSpan.toggleClass('changed').fadeTo(500, $rowsWithSpan.hasClass('changed') ? 0.5 : 1);
+				$(this).text($rowsWithSpan.hasClass('changed') ? "Resetuj przezroczystość" : "Zmniejsz przezroczystość o połowę dla wszystkich wierszy z <span>")
+					.toggleClass('btn-danger btn-primary');
+			});
+	
+			$('#filter7').click(function () {
+				$janRows.toggleClass('changed').fadeTo(500, $janRows.hasClass('changed') ? 0.3 : 1);
+				$(this).text($janRows.hasClass('changed') ? "Resetuj przezroczystość" : "Zmniejsz przezroczystość do 1/3 dla kazdego wiersza zawierajacego 'Jan'")
+					.toggleClass('btn-danger btn-primary');
+			});
+	
+			$('#filter8').click(function () {
+				$inputHidden.toggleClass('changed').slideToggle(500);
+				$(this).text($inputHidden.hasClass('changed') ? "Ukryj elementy" : "Pokaż ukryte elementy")
+					.toggleClass('btn-danger btn-primary');
+			});
+		});
+	</script>
+	
 
 </body>
 

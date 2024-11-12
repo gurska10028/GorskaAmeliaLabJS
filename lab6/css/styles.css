@@ -1,4 +1,6 @@
 @charset "UTF-8";
+
+/* Globalne style */
 .navbar-brand {
     padding: 0px;
 }
@@ -16,8 +18,8 @@
 }
 
 .pullquote {
-    float: right;
-    clear: right;
+    position: relative; /* lub absolute */
+    right: 0; /* dla `absolute` - przesuń całkowicie w prawo */
     width: 200px;
     padding: 10px;
     font-size: 20px;
@@ -25,14 +27,232 @@
     border-radius: 10px;
     margin: 20px 0 10px 10px;
     font-style: italic;
-    }
+}
 
+/* Style dla cytatów */
+.pq {
+    font-size: 16px; /* Rozmiar tekstu */
+    color: #333; /* Kolor tekstu */
+    line-height: 1.5; /* Interlinia */
+    margin: 10px 0; /* Marginesy */
+    padding: 5px; /* Padding */
+    font-weight: normal; /* Normalna grubość czcionki */
+}
 
-    .pq {
-        font-size: 16px; /* Rozmiar tekstu */
-        color: #333; /* Kolor tekstu */
-        line-height: 1.5; /* Interlinia */
-        margin: 10px 0; /* Marginesy */
-        padding: 5px; /* Padding */
-        font-weight: normal; /* Normalna grubość czcionki */
-    }
+/* Style z różnymi kolorami i efektami dla tekstu */
+.style-1 {
+    color: #ff5733; /* Czerwonawy kolor tekstu */
+    font-size: 16px; /* Rozmiar czcionki */
+    font-weight: bold; /* Pogrubienie */
+}
+
+.style-2 {
+    color: #33c1ff; /* Niebieski kolor tekstu */
+    font-size: 18px; /* Większy rozmiar czcionki */
+    font-style: italic; /* Kursywa */
+}
+
+.style-3 {
+    color: #28a745; /* Zielony kolor tekstu */
+    font-size: 20px; /* Większy rozmiar czcionki */
+    text-decoration: underline; /* Podkreślenie */
+}
+
+.style-4 {
+    color: #ff33c4; /* Różowy kolor tekstu */
+    font-size: 22px; /* Większy rozmiar czcionki */
+    font-family: 'Georgia', serif; /* Inny krój pisma */
+}
+
+.style-5 {
+    color: #6f42c1; /* Fioletowy kolor tekstu */
+    font-size: 24px; /* Jeszcze większy rozmiar czcionki */
+    text-transform: uppercase; /* Duże litery */
+}
+
+.style-6 {
+    color: #ffb733; /* Pomarańczowy kolor tekstu */
+    font-size: 26px; /* Duży rozmiar czcionki */
+    background-color: #fff4e1; /* Jasne tło */
+    padding: 5px;
+}
+
+.style-7 {
+    color: #343a40; /* Szary kolor tekstu */
+    font-size: 28px; /* Bardzo duży rozmiar czcionki */
+    letter-spacing: 2px; /* Rozstawienie liter */
+}
+
+.style-8 {
+    color: #ffc107; /* Żółty kolor tekstu */
+    font-size: 30px; /* Bardzo duży rozmiar czcionki */
+    font-weight: bold;
+    border-bottom: 2px solid #ffc107; /* Dolna linia */
+}
+
+.style-9 {
+    color: #dc3545; /* Czerwony kolor tekstu */
+    font-size: 32px; /* Największy rozmiar czcionki */
+    font-style: italic;
+    font-weight: bold;
+}
+
+.style-10 {
+    color: #17a2b8; /* Turkusowy kolor tekstu */
+    font-size: 34px; /* Ekstremalny rozmiar czcionki */
+    text-shadow: 2px 2px #ccc; /* Cień tekstu */
+}
+
+/* Styl dla paragrafów w klasie .main */
+.main p {
+    color: #555;
+    font-size: 14px;
+    font-style: italic;
+    background-color: #f9f9f9;
+    border-left: 3px solid #007bff;
+    padding: 8px 10px;
+    margin: 16px auto;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* Styl dla sekcji */
+section {
+    margin-bottom: 30px;
+}
+
+/* Nagłówki sekcji */
+.h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styl kontenerów */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabela */
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.table tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table .quote {
+    font-style: italic;
+}
+
+.btn {
+    padding: 12px 24px; /* Zwiększono padding */
+    font-size: 1.2rem; /* Zwiększono rozmiar czcionki */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    font-weight: bold; /* Pogrubienie tekstu */
+}
+
+.btn-primary {
+    background-color: #5c9dff; /* Złagodzony niebieski */
+    color: white;
+    border: none;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Przycisk, który zmienia kolor wierszy */
+.table .changed {
+    background-color: #ffeb3b;
+}
+
+/* Zmiana jasności tekstu */
+.table .changed td {
+    opacity: 0.5;
+}
+
+/* Ukrywanie elementów */
+input[type="number"]:not([style*="display: none"]) {
+    display: inline-block;
+}
+
+/* Animacje przycisków */
+button:focus {
+    outline: none;
+}
+
+/* Styl dla przycisków w górnej części */
+section button {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* Zmiana przezroczystości */
+input[type="number"]:disabled {
+    opacity: 0.5;
+}
+
+/* Styl dla zmieniających się wierszy */
+.changed {
+    background-color: lightcoral !important;
+}
+
+/* Styl dla wierszy z klasą test */
+.test {
+    background-color: #e9ecef;
+}
+
+/* Kolor dla elementów z nazwą zawierającą "tak" */
+.changed {
+    color: red;
+}
+
+/* Przycisk aktywacji akcji */
+button:active {
+    transform: translateY(2px);
+}
