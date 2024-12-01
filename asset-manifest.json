@@ -1,10 +1,15 @@
 {
   "files": {
-    "main.js": "/GorskaAmeliaLabJS/react-app/static/js/main.7df210a4.js",
-    "index.html": "/GorskaAmeliaLabJS/react-app/index.html",
-    "main.7df210a4.js.map": "/GorskaAmeliaLabJS/react-app/static/js/main.7df210a4.js.map"
+    "main.css": "/GorskaAmeliaLabJS/static/css/main.e6c13ad2.css",
+    "main.js": "/GorskaAmeliaLabJS/static/js/main.25a38a3b.js",
+    "static/js/453.2a82e7ac.chunk.js": "/GorskaAmeliaLabJS/static/js/453.2a82e7ac.chunk.js",
+    "index.html": "/GorskaAmeliaLabJS/index.html",
+    "main.e6c13ad2.css.map": "/GorskaAmeliaLabJS/static/css/main.e6c13ad2.css.map",
+    "main.25a38a3b.js.map": "/GorskaAmeliaLabJS/static/js/main.25a38a3b.js.map",
+    "453.2a82e7ac.chunk.js.map": "/GorskaAmeliaLabJS/static/js/453.2a82e7ac.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.7df210a4.js"
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.25a38a3b.js"
   ]
 }
