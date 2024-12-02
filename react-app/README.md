@@ -1,2 +1,2 @@
-<h1>Lab7</h1>
+<h1>Lab8</h1>
 https://gurska10028.github.io/GorskaAmeliaLabJS
