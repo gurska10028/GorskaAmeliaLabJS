@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { AppContext } from './App'; // Import kontekstu
+import { AppContext } from '../App'; // Import kontekstu
 
 const CounterDisplay = () => {
     const { count } = useContext(AppContext); // Pobieranie wartości z kontekstu
