@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/GorskaAmeliaLabJS/static/css/main.8ec2e8e1.css",
-    "main.js": "/GorskaAmeliaLabJS/static/js/main.5a471ff7.js",
+    "main.js": "/GorskaAmeliaLabJS/static/js/main.eb182b90.js",
     "static/js/453.2a82e7ac.chunk.js": "/GorskaAmeliaLabJS/static/js/453.2a82e7ac.chunk.js",
     "index.html": "/GorskaAmeliaLabJS/index.html",
     "main.8ec2e8e1.css.map": "/GorskaAmeliaLabJS/static/css/main.8ec2e8e1.css.map",
-    "main.5a471ff7.js.map": "/GorskaAmeliaLabJS/static/js/main.5a471ff7.js.map",
+    "main.eb182b90.js.map": "/GorskaAmeliaLabJS/static/js/main.eb182b90.js.map",
     "453.2a82e7ac.chunk.js.map": "/GorskaAmeliaLabJS/static/js/453.2a82e7ac.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8ec2e8e1.css",
-    "static/js/main.5a471ff7.js"
+    "static/js/main.eb182b90.js"
   ]
 }
